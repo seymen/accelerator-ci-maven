@@ -1,4 +1,4 @@
-FROM jenkins/jenkins:2.62
+FROM jenkins/jenkins:2.138.1
 
 # install jenkins plugins
 COPY jenkins/plugins /usr/share/jenkins/plugins
@@ -53,7 +53,7 @@ RUN apt-get install -y nodejs
 
 USER jenkins
 
-ENTRYPOINT ["/bin/tini", "--", "/usr/local/bin/jenkins-entrypoint.sh"]
+ENTRYPOINT ["/sbin/tini", "--", "/usr/local/bin/jenkins-entrypoint.sh"]
 
 # cat git authentication ssh public key so we can copy/paste
 RUN /usr/share/jenkins/ssh/keycat.sh
