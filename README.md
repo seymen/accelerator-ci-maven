@@ -1,4 +1,4 @@
-# Note: This repo has been moved to https://github.com/apigee/maven-jenkins-ci-demo and will not be further maintained.
+# Note: This repo has been moved to https://github.com/apigee/maven-jenkins-ci-demo.
 
 # Continuous Integration for Apigee Proxies using Maven
 
